@@ -7,7 +7,7 @@ import java.util.*
  * [1, 3, 3]
  * [3, 3, 1]
  */
-object SubArray {
+ object SubArray {
     // Utility function to print the sub-array arr[i,j]
     fun print(arr: IntArray, i: Int, j: Int) {
         val list: MutableList<Int> = ArrayList()
