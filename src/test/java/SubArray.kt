@@ -22,15 +22,15 @@ object SubArray {
     // Function to find sub-arrays with given sum in an array
     fun findSubarrays(arr: IntArray, sum: Int) {
         for (i in arr.indices) {
-            var sum_so_far = 0
+            var sumSoFar = 0
 
             // consider all sub-arrays starting from i and ending at j
             for (j in i until arr.size) {
                 // sum of elements so far
-                sum_so_far += arr[j]
+                sumSoFar += arr[j]
 
                 // if sum so far is equal to the given sum
-                if (sum_so_far == sum) {
+                if (sumSoFar == sum) {
                     print(arr, i, j)
                 }
             }
